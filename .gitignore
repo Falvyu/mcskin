@@ -1,0 +1,8 @@
+# Emacs backup files
+*~
+
+# Images
+*.png
+
+# Binaries
+target/

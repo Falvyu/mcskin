@@ -1,0 +1,19 @@
+[package]
+name = "mcskin"
+version = "0.1.0"
+authors = ["Falvyu <falvyu.jaeda@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+mojang-api = "0.6.1"
+reqwest = {version = "0.10", features = ["stream"]}
+uuid = "0.8"
+serde_json = "1.0"
+futures = "0.3"
+tokio = { version = "0.2", features = ["full"] }
+tokio-util = {version = "0.3.1", features = ["codec"]}
+tokio-file-unix = "0.5.1"
+clap = { version = "3.0.0-beta.1", features = ["yaml"] }
+rand = "0.7.3"

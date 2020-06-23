@@ -1,0 +1,41 @@
+name: mcskin
+version: "0.1.0"
+author: Falvyu <falvyu.jaeda@gmail.com>
+about: Changes minecraft skin
+args:
+  - model:
+      short: m
+      long: model
+      about: Choose the model; default / slim.
+      takes_value: true
+      number_of_values: 1
+      possible_values: [default, slim]
+      default_value: default
+  - input:
+      short: i
+      long: input
+      about: Input file / url / directory
+      takes_value: true
+      number_of_values: 1
+      required: true
+  - token:
+      short: t
+      long: token
+      about: Token file with uuid
+      takes_value: true
+      number_of_values: 1
+      required_unless: cred
+      conflicts_with: cred
+  - cred:
+      short: c
+      long: cred
+      about: credentials file
+      takes_value: true
+      number_of_values: 1
+      required_unless: token
+      conflicts_with: token          
+  - export:
+      short: e
+      long: export
+      about: Exports token and uuid to a text file.
+      takes_value: true      
